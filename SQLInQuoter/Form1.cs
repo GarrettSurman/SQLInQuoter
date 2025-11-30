@@ -31,5 +31,27 @@ namespace SQLInQuoter
         {
             Clipboard.SetText(textBoxOutput.Text);
         }
+
+        private void buttonConvert_Click(object sender, EventArgs e)
+        {
+            string input = textBoxInput.Text;
+            String[] words =  input.Split(new[] { ' ', '\r', '\n', '\t', ',', ';', '|' },StringSplitOptions.RemoveEmptyEntries);
+            string output = "";
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                output += "'" + words[i] + "'";
+                if (i < words.Length - 1)
+                {
+                    output += ",\r\n";
+                }
+                else
+                {
+                    output += "\n";
+                }
+            }
+
+            textBoxOutput.Text = output;
+        }
     }
 }
