@@ -16,5 +16,20 @@ namespace SQLInQuoter
         {
             InitializeComponent();
         }
+
+        private void buttonClearInput_Click(object sender, EventArgs e)
+        {
+            textBoxInput.Clear();   
+        }
+
+        private void buttonClearOutput_Click(object sender, EventArgs e)
+        {
+            textBoxOutput.Clear();  
+        }
+
+        private void buttonCopyOutput_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxOutput.Text);
+        }
     }
 }

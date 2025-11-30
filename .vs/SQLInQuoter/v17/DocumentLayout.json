@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\garre\\source\\repos\\SQLInQuoter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32D2BAE9-CA4F-4BC6-BE8D-0451C842A066}|SQLInQuoter\\SQLInQuoter.csproj|c:\\users\\garre\\source\\repos\\sqlinquoter\\sqlinquoter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32D2BAE9-CA4F-4BC6-BE8D-0451C842A066}|SQLInQuoter\\SQLInQuoter.csproj|solutionrelative:sqlinquoter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32D2BAE9-CA4F-4BC6-BE8D-0451C842A066}|SQLInQuoter\\SQLInQuoter.csproj|c:\\users\\garre\\source\\repos\\sqlinquoter\\sqlinquoter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{32D2BAE9-CA4F-4BC6-BE8D-0451C842A066}|SQLInQuoter\\SQLInQuoter.csproj|solutionrelative:sqlinquoter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\garre\\source\\repos\\SQLInQuoter\\SQLInQuoter\\Form1.cs",
+              "RelativeDocumentMoniker": "SQLInQuoter\\Form1.cs",
+              "ToolTip": "C:\\Users\\garre\\source\\repos\\SQLInQuoter\\SQLInQuoter\\Form1.cs",
+              "RelativeToolTip": "SQLInQuoter\\Form1.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA9wB8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T02:47:26.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garre\\source\\repos\\SQLInQuoter\\SQLInQuoter\\Form1.cs",
               "RelativeDocumentMoniker": "SQLInQuoter\\Form1.cs",
