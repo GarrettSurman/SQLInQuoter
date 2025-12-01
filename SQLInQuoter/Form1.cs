@@ -43,7 +43,16 @@ namespace SQLInQuoter
                 output += "'" + words[i] + "'";
                 if (i < words.Length - 1)
                 {
-                    output += ",\r\n";
+                    if(checkBoxOneLineOutput.Checked){
+
+                        output += ", ";
+                    }
+                    else
+                    {
+                        output += ",\r\n";
+                    }
+
+             
                 }
                 else
                 {

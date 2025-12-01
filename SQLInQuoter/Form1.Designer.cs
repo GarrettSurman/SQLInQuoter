@@ -34,6 +34,7 @@
             this.buttonCopyOutput = new System.Windows.Forms.Button();
             this.buttonClearOutput = new System.Windows.Forms.Button();
             this.buttonClearInput = new System.Windows.Forms.Button();
+            this.checkBoxOneLineOutput = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBoxInput
@@ -96,11 +97,24 @@
             this.buttonClearInput.UseVisualStyleBackColor = true;
             this.buttonClearInput.Click += new System.EventHandler(this.buttonClearInput_Click);
             // 
+            // checkBoxOneLineOutput
+            // 
+            this.checkBoxOneLineOutput.AllowDrop = true;
+            this.checkBoxOneLineOutput.AutoSize = true;
+            this.checkBoxOneLineOutput.Location = new System.Drawing.Point(325, 29);
+            this.checkBoxOneLineOutput.Name = "checkBoxOneLineOutput";
+            this.checkBoxOneLineOutput.Size = new System.Drawing.Size(113, 17);
+            this.checkBoxOneLineOutput.TabIndex = 7;
+            this.checkBoxOneLineOutput.Text = "Output on one line";
+            this.checkBoxOneLineOutput.UseMnemonic = false;
+            this.checkBoxOneLineOutput.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 738);
+            this.Controls.Add(this.checkBoxOneLineOutput);
             this.Controls.Add(this.buttonClearInput);
             this.Controls.Add(this.buttonClearOutput);
             this.Controls.Add(this.buttonCopyOutput);
@@ -122,6 +136,7 @@
         private System.Windows.Forms.Button buttonCopyOutput;
         private System.Windows.Forms.Button buttonClearOutput;
         private System.Windows.Forms.Button buttonClearInput;
+        private System.Windows.Forms.CheckBox checkBoxOneLineOutput;
     }
 }
 
