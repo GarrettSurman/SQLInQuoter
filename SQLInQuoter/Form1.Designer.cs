@@ -35,26 +35,29 @@
             this.buttonClearOutput = new System.Windows.Forms.Button();
             this.buttonClearInput = new System.Windows.Forms.Button();
             this.checkBoxOneLineOutput = new System.Windows.Forms.CheckBox();
+            this.groupBoxOptions = new System.Windows.Forms.GroupBox();
+            this.checkBoxAddSQLIn = new System.Windows.Forms.CheckBox();
+            this.groupBoxOptions.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxInput
             // 
             this.textBoxInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxInput.Location = new System.Drawing.Point(12, 52);
+            this.textBoxInput.Location = new System.Drawing.Point(12, 70);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxInput.Size = new System.Drawing.Size(235, 638);
+            this.textBoxInput.Size = new System.Drawing.Size(235, 620);
             this.textBoxInput.TabIndex = 1;
             // 
             // textBoxOutput
             // 
             this.textBoxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOutput.Location = new System.Drawing.Point(313, 52);
+            this.textBoxOutput.Location = new System.Drawing.Point(313, 70);
             this.textBoxOutput.Multiline = true;
             this.textBoxOutput.Name = "textBoxOutput";
             this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutput.Size = new System.Drawing.Size(235, 638);
+            this.textBoxOutput.Size = new System.Drawing.Size(235, 620);
             this.textBoxOutput.TabIndex = 2;
             // 
             // buttonConvert
@@ -101,7 +104,7 @@
             // 
             this.checkBoxOneLineOutput.AllowDrop = true;
             this.checkBoxOneLineOutput.AutoSize = true;
-            this.checkBoxOneLineOutput.Location = new System.Drawing.Point(325, 29);
+            this.checkBoxOneLineOutput.Location = new System.Drawing.Point(6, 19);
             this.checkBoxOneLineOutput.Name = "checkBoxOneLineOutput";
             this.checkBoxOneLineOutput.Size = new System.Drawing.Size(113, 17);
             this.checkBoxOneLineOutput.TabIndex = 7;
@@ -109,12 +112,35 @@
             this.checkBoxOneLineOutput.UseMnemonic = false;
             this.checkBoxOneLineOutput.UseVisualStyleBackColor = true;
             // 
+            // groupBoxOptions
+            // 
+            this.groupBoxOptions.Controls.Add(this.checkBoxAddSQLIn);
+            this.groupBoxOptions.Controls.Add(this.checkBoxOneLineOutput);
+            this.groupBoxOptions.Location = new System.Drawing.Point(13, 13);
+            this.groupBoxOptions.Name = "groupBoxOptions";
+            this.groupBoxOptions.Size = new System.Drawing.Size(535, 51);
+            this.groupBoxOptions.TabIndex = 8;
+            this.groupBoxOptions.TabStop = false;
+            this.groupBoxOptions.Text = "Options";
+            // 
+            // checkBoxAddSQLIn
+            // 
+            this.checkBoxAddSQLIn.AllowDrop = true;
+            this.checkBoxAddSQLIn.AutoSize = true;
+            this.checkBoxAddSQLIn.Location = new System.Drawing.Point(125, 19);
+            this.checkBoxAddSQLIn.Name = "checkBoxAddSQLIn";
+            this.checkBoxAddSQLIn.Size = new System.Drawing.Size(92, 17);
+            this.checkBoxAddSQLIn.TabIndex = 8;
+            this.checkBoxAddSQLIn.Text = "Add SQL IN ()";
+            this.checkBoxAddSQLIn.UseMnemonic = false;
+            this.checkBoxAddSQLIn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 738);
-            this.Controls.Add(this.checkBoxOneLineOutput);
+            this.Controls.Add(this.groupBoxOptions);
             this.Controls.Add(this.buttonClearInput);
             this.Controls.Add(this.buttonClearOutput);
             this.Controls.Add(this.buttonCopyOutput);
@@ -123,6 +149,8 @@
             this.Controls.Add(this.textBoxInput);
             this.Name = "Form1";
             this.Text = "SQLInQuoter";
+            this.groupBoxOptions.ResumeLayout(false);
+            this.groupBoxOptions.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +165,8 @@
         private System.Windows.Forms.Button buttonClearOutput;
         private System.Windows.Forms.Button buttonClearInput;
         private System.Windows.Forms.CheckBox checkBoxOneLineOutput;
+        private System.Windows.Forms.GroupBox groupBoxOptions;
+        private System.Windows.Forms.CheckBox checkBoxAddSQLIn;
     }
 }
 

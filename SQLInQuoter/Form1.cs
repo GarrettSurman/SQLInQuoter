@@ -37,6 +37,9 @@ namespace SQLInQuoter
             string input = textBoxInput.Text;
             String[] words =  input.Split(new[] { ' ', '\r', '\n', '\t', ',', ';', '|' },StringSplitOptions.RemoveEmptyEntries);
             string output = "";
+            
+            
+               
 
             for (int i = 0; i < words.Length; i++)
             {
@@ -58,6 +61,11 @@ namespace SQLInQuoter
                 {
                     output += "\n";
                 }
+            }
+
+            if (checkBoxAddSQLIn.Checked)
+            {
+                output = "IN (" + output.TrimEnd() + ");";
             }
 
             textBoxOutput.Text = output;
